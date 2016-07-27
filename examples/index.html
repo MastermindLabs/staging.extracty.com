@@ -1,0 +1,622 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Extracty | Turn the Web into an API</title>
+
+    <meta name="description" content="Extracty is a platform for developers to access any data from any webpage. Turn the Web into an API and write your backend in minutes.
+">
+
+    <link rel="alternate" href="https://extracty.com/examples/" hreflang="en-us" />
+
+    <link rel="canonical" href="https://extracty.com/examples/">
+    <!-- <link rel="alternate" type="application/rss+xml" title="extracty.com" href="https://extracty.com/feed.xml"> -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/assets/favicons/manifest.json">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#2b2f3e">
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <!-- Open Sans -->
+  	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400italic,600,700italic,400,700,800italic" rel="stylesheet" type="text/css">
+  	<!-- VarelaRound -->
+  	<link href="//fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+
+    <link href='//fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+  	<!-- Icon Font - Font Awesome -->
+  	<link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+  	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="/external/z-nav/z-nav.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+	  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+    <![endif]-->
+
+
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+</head>
+
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="/images/logo.png"/>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li>
+          
+          
+          
+          <a href="/how-it-works" alt="How it Works" title="How it Works">How it Works</a>
+          
+        </li>
+        
+        <li>
+          
+          
+          
+          <a href="/product" alt="Product" title="Product">Product</a>
+          
+        </li>
+        
+        <li>
+          
+          
+          
+          <a class="active" href="/examples" alt="Examples" title="Examples">Examples</a>
+          
+        </li>
+        
+        <li>
+          <a href="http://blog.extracty.com" alt="Extracty Blog" title="Blog">Blog</a>
+        </li>
+        <li>
+          <a class="githubButton" href="https://core.extracty.com/user/github/oauth/redirect"> Continue with GitHub</a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container-fluid">
+  <div class="row examples-page">
+  <div class="product-page" style="margin-bottom: -20px;">
+    <div class="block" id="header-block">
+        <div class="container headerBlock">
+
+          <p class="small_headline">Using Extracty</p>
+          <p class="headline">EXAMPLES</p>
+
+          <!-- <p class="explain">Write a backend in 20 min. Include any information online. Share the endpoint with your team and collaborate on the work.
+           Let us take care of scaling, caching, distribution and speed. </p> -->
+        </div>
+    </div>
+
+    <div class="block light">
+      <div class="container">
+        <h2 class="endpointTypeHeadline">Basic Endpoints</h2>
+
+<!-- ###################################################################################### -->
+
+        <div class="row headerRow">
+          <div class="col-md-4">
+            <h3>Real Estate Search</h3>
+          </div>
+          <div class="col-md-8">
+            <p><pre>http://www.immobilienscout24.de/Suche/S-3/Wohnung-Kauf/{{state}}/{{city}}</pre></p>
+          </div>
+        </div>
+        <div class="row exampleRow">
+          <div class="col-md-4">
+            <p>This endpoint returns the prices of the most expensive real estate objects in Berlin, Germany. The city is a parameter so that the endpoint can be used for any city.<a target="_blank" style="padding-left: 5px" href="" class=link0>→</a></p>
+            <img class="logo" src="immoscout.png" />
+          </div>
+          <div class="col-md-4">
+          <h5>Code</h5>
+<div id="editor0" class="editor"
+>prices = $('.result-list-entry__primary-criterion:first-child').get()
+  .map(function(elements){
+    return elements.textContent.trim().split('€')[0]
+  });
+
+locations = $('.result-list-entry__address').get()
+  .map(function(elements){
+    return elements.textContent.trim().split('€')[0]
+  });
+
+var results = []
+for (var i = 0; i < prices.length ; i++) {
+  results.push({
+    price: prices[i] + '€',
+    location: locations[i] || ''
+  })
+}
+
+return results</div>
+          </div>
+          <div class="col-md-4">
+          <h5>Result</h5>
+            <div id="result0" class="result"
+>Loading...</div>
+          </div>
+        </div>
+
+<!-- ###################################################################################### -->
+
+        <div class="row headerRow">
+          <div class="col-md-4">
+            <h3>Trending Startups</h3>
+          </div>
+          <div class="col-md-8">
+            <p><pre>https://angel.co/companies/trending/new</pre></p>
+          </div>
+        </div>
+        <div class="row exampleRow">
+          <div class="col-md-4">
+            <p>This endpoint extracts the trending startups from the angel.co webpage.<a target="_blank" style="padding-left: 5px" href="" class=link1>→</a></p>
+            <img class="logo" src="angellist.png" />
+
+          </div>
+          <div class="col-md-4">
+          <h5>Code</h5>
+<div id="editor1" class="editor"
+>var startups = $('.startup_column:not(:first)').get().map(e => {
+  return {
+    name: e.querySelector('.name').textContent.trim(),
+    pitch: e.querySelector('.pitch').textContent.trim(),
+    info: e.querySelector('.dct65').textContent.trim().replace(/\s+/g, ' ')
+  };
+});
+
+$('.new_company_columns:not(:first)').get().map((e, i) => {
+  startups[i].hiring = (e.querySelector('.left').textContent.trim().indexOf('Jobs') > -1);
+  startups[i].time = e.querySelector('.right').textContent.trim().replace(/\s+/g, ' ');
+});
+
+return startups</div>
+          </div>
+          <div class="col-md-4">
+          <h5>Result</h5>
+            <div id="result1" class="result"
+>Loading...</div>
+          </div>
+        </div>
+
+<!-- ###################################################################################### -->
+
+        <div class="row headerRow">
+          <div class="col-md-4">
+            <h3>BIN Search</h3>
+          </div>
+          <div class="col-md-8">
+            <p><pre>https://binlists.com/{{BIN}}</pre></p>
+          </div>
+        </div>
+        <div class="row exampleRow">
+          <div class="col-md-4">
+            <p>This endpoint returns searches information about a credit card by its BIN number. A similar endpoint is ranked as the #1 paid financial endpoint on mashape.com.<a target="_blank" style="padding-left: 5px" href="" class=link3>→</a></p>
+            <img class="logo" src="bin.png" />
+
+          </div>
+          <div class="col-md-4">
+          <h5>Code</h5>
+<div id="editor3" class="editor"
+>return {
+    brand: $('html div div tbody > tr:nth-of-type(2) a:first').get(0).textContent.trim(),
+    type: $('html div div tbody > tr:nth-of-type(3) a:first').get(0).textContent.trim().replace(/\s+/g, ' '),
+    issuer: $('html div div > table:nth-of-type(2) tr a:first').get(0).textContent.trim(),
+    country: $('html div div > table:nth-of-type(2) tr:nth-of-type(2) a:first').get(0).textContent.trim(),
+}</div>
+          </div>
+          <div class="col-md-4">
+          <h5>Result</h5>
+            <div id="result3" class="result"
+>Loading...</div>
+          </div>
+        </div>
+
+<!-- ###################################################################################### -->
+
+        <div class="row headerRow">
+          <div class="col-md-4">
+            <h3>Flight departure times</h3>
+          </div>
+          <div class="col-md-8">
+            <p><pre>http://www.berlin-airport.de/en/travellers-txl/arrivals-and-departures/departures/</pre></p>
+          </div>
+        </div>
+        <div class="row exampleRow">
+          <div class="col-md-4">
+            <p>This endpoint goes to the berlin-airport.de website and extracts the next flights that depart from the SXF airport.<a target="_blank" style="padding-left: 5px" href="" class=link4>→</a></p>
+            <img class="logo" src="sxf.png" />
+
+          </div>
+          <div class="col-md-4">
+          <h5>Code</h5>
+<div id="editor4" class="editor"
+>results = []
+var destinations = $('tr:not(:first-child) .flightAirport')
+var times = $('tr:not(:first-child) .flightDeptArr')
+destinations.each(function(id, element){
+   var item = {
+     'destination': element.innerHTML,
+     'time': times[id].innerHTML.trim()
+   }
+   results.push(item)
+})
+return results</div>
+          </div>
+          <div class="col-md-4">
+          <h5>Result</h5>
+            <div id="result4" class="result"
+>Loading...</div>
+          </div>
+        </div>
+
+<!-- ###################################################################################### -->
+
+
+  <h2 class="endpointTypeHeadline multistep">CasperJS Endpoints</h2>
+
+        <div class="row headerRow">
+          <div class="col-md-4">
+            <h3>ebay Search</h3>
+          </div>
+          <div class="col-md-8">
+            <p><pre>http://www.ebay.com/</pre></p>
+          </div>
+        </div>
+        <div class="row exampleRow">
+          <div class="col-md-4">
+            <p>This endpoint goes to the ebay.com website and searches for the search term 'Drone'.<a target="_blank" style="padding-left: 5px" href="" class=link5>→</a></p>
+            <img class="logo" src="ebay.png" />
+          </div>
+          <div class="col-md-4">
+          <h5>Code</h5>
+<div id="editor5" class="editor"
+>var result = {};
+
+casper.start('http://www.ebay.com/');
+
+casper.then(function() {
+  casper.sendKeys("#gh-ac", extracty.args.search);
+})
+
+casper.then(function() {
+  casper.click("#gh-btn");
+})
+
+casper.waitForSelector(".vip", null, function() {
+  callback('Failed waiting for ".vip"');
+});
+
+casper.then(function() {
+  var value = casper.evaluate(function() {
+    var texts = Array.prototype.slice.call(document.querySelectorAll(".vip"))
+      .map(function(e) { return e.textContent.trim(); });
+    return texts;
+  })
+  result.title = value;
+})
+
+
+casper.then(function() {
+  var value = casper.evaluate(function() {
+    var texts = Array.prototype.slice.call(document.querySelectorAll(".vip"))
+      .map(function(e) { return e.href; });
+    return texts;
+  })
+  result.link = value;
+})
+
+casper.waitForSelector(".prc .bold", null, function() {
+  callback('Failed waiting for ".prc .bold"');
+});
+
+casper.then(function() {
+  var value = casper.evaluate(function() {
+    var texts = Array.prototype.slice.call(document.querySelectorAll(".prc .bold"))
+      .map(function(e) { return e.textContent.trim().replace(/\s.*/g, ''); });
+    return texts;
+  })
+  result.price = value;
+})
+
+var zip = (result) => {
+    var keys = Object.keys(result);
+    return result[keys[0]].map((_, i) => {
+        var x = {}; keys.forEach(e => x[e] = result[e][i]); return x
+    });
+}
+
+casper.run(function() {
+    callback(zip(result));
+});</div>
+          </div>
+          <div class="col-md-4">
+          <h5>Result</h5>
+            <div id="result5" class="result"
+>Loading...</div>
+          </div>
+        </div>
+
+<!-- ###################################################################################### -->
+
+        <div class="row headerRow">
+          <div class="col-md-4">
+            <h3>Growthhackers Posts</h3>
+          </div>
+          <div class="col-md-8">
+            <p><pre>https://growthhackers.com/posts</pre></p>
+          </div>
+        </div>
+        <div class="row exampleRow">
+          <div class="col-md-4">
+            <p>This endpoint extracts the latest posts from GrowthHackers.<a target="_blank" style="padding-left: 5px" href="" class=link2>→</a></p>
+            <img class="logo" src="growthhackers.png" />
+          </div>
+          <div class="col-md-4">
+          <h5>Code</h5>
+<div id="editor2" class="editor"
+>var result = {};
+
+casper.start('https://growthhackers.com/posts');
+
+casper.waitForSelector("h3 a", null, function() {
+  callback('Failed waiting for "h3 a"');
+});
+
+casper.then(function() {
+  result = casper.evaluate(function() {
+    return {
+      title: Array.prototype.slice.call(document.querySelectorAll("h3 a")).map(function(e) { return e.textContent.trim(); }),
+      link: Array.prototype.slice.call(document.querySelectorAll("h3 a")).map(function(e) { return e.href; }),
+      comments: Array.prototype.slice.call(document.querySelectorAll(".comments-section")).map(function(e) { return e.textContent.trim(); }),
+      upvotes: Array.prototype.slice.call(document.querySelectorAll(".inner-first")).map(function(e) { return e.textContent.trim(); }),
+    }
+  })
+})
+
+var zip = (result) => {
+    var keys = Object.keys(result);
+    return result[keys[0]].map((_, i) => {
+        var x = {}; keys.forEach(e => x[e] = result[e][i]); return x
+    });
+}
+
+casper.run(function() {
+    callback(zip(result));
+});</div>
+          </div>
+          <div class="col-md-4">
+          <h5>Result</h5>
+            <div id="result2" class="result"
+>Loading...</div>
+          </div>
+        </div>
+
+<!-- ###################################################################################### -->
+
+        <div class="row headerRow">
+          <div class="col-md-4">
+            <h3>Airbnb Search</h3>
+          </div>
+        </div>
+        <div class="row exampleRow">
+          <div class="col-md-4">
+            <p>This performs an Airbnb search and returns the listing results.<a target="_blank" style="padding-left: 5px" href="" class="link6">→</a></p>
+            <img class="logo" src="airbnb.jpg" />
+          </div>
+          <div class="col-md-4">
+          <h5>Code</h5>
+<div id="editor6" class="editor"
+>var result = {};
+
+casper.start(`https://www.airbnb.de/s/${extracty.args.location}?guests=${extracty.args.guests}&adults=${extracty.args.adults}&checkin=${extracty.args.checkin}&checkout=${extracty.args.checkout}`);
+
+casper.waitForSelector(".listing-name--display", null, function() {
+  callback('Failed waiting for ".listing-name--display"');
+});
+
+casper.then(function() {
+  result = casper.evaluate(function() {
+    var result = {};
+    result.name = Array.prototype.slice.call(document.querySelectorAll(".listing-name--display"))
+      .map(function(e) { return e.textContent.trim(); });
+    result.guests = Array.prototype.slice.call(document.querySelectorAll(".hide-md span+ span"))
+      .map(function(e) { return e.textContent.trim().replace(/ .*/, ''); });
+    result.link = Array.prototype.slice.call(document.querySelectorAll(".search-results div.panel-body.panel-card-section h3 > a"))
+      .map(function(e) { return e.href; });
+    result.image = Array.prototype.slice.call(document.querySelectorAll(".img-responsive-height"))
+      .map(function(e) { return e.src; });
+    result.price = Array.prototype.slice.call(document.querySelectorAll(".listing .price-amount"))
+      .map(function(e) { return e.textContent.trim(); });
+    return result;
+  })
+})
+
+var zip = (result) => {
+    var keys = Object.keys(result);
+    return result[keys[0]].map((_, i) => {
+        var x = {}; keys.forEach(e => x[e] = result[e][i]); return x
+    });
+}
+
+casper.run(function() {
+    callback(zip(result));
+});</div>
+          </div>
+          <div class="col-md-4">
+          <h5>Result</h5>
+            <div id="result6" class="result"
+>Loading...</div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+    <br />
+
+  </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ace.js"></script>
+<script>
+var endpoints = [{
+  id: 271,
+  params: '?state=Berlin&city=Berlin'
+},{
+  id: 204,
+  params: ''
+},{
+  id: 274,
+  params: ''
+},{
+  id: 280,
+  params: '?BIN=456471'
+},{
+  id: 281,
+  params: ''
+},{
+  id: 282,
+  params: '?search=Drone'
+},{
+  id: 327,
+  params: '?location=Berlin&adults=1&guests=2&checkin=12.09.2016&checkout=14.09.2016'
+}];
+
+for (var i = 0; i < document.querySelectorAll('.editor').length; i++) {
+  var editor = ace.edit("editor" + i);
+  editor.setTheme("ace/theme/tomorrow");
+  editor.getSession().setUseWrapMode(true);
+  editor.getSession().setMode("ace/mode/javascript");
+  editor.setReadOnly(true);
+}
+for (var i = 0; i < document.querySelectorAll('.editor').length; i++) {
+  document.querySelector(".link" + i).href = "https://api.extracty.com/v1/" + endpoints[i].id + "/7135a04b-9abf-429d-900f-d8164bedfe03/" + endpoints[i].params
+  console.log(document.querySelector(".link" + i))
+}
+for (var i = 0; i < document.querySelectorAll('.result').length; i++) {
+  var editor = ace.edit("result" + i);
+  editor.setTheme("ace/theme/tomorrow");
+  editor.getSession().setUseWrapMode(true);
+  editor.getSession().setMode("ace/mode/javascript");
+  editor.setReadOnly(true);
+  (function(editor) {
+    jQuery.ajax({
+      url:"https://api.extracty.com/v1/" + endpoints[i].id + "/7135a04b-9abf-429d-900f-d8164bedfe03/" + endpoints[i].params,
+      crossDomain: true
+    }).done(function (response) {
+      if (response.success) {
+        console.log(response.result)
+        console.log(editor.getValue())
+
+         editor.setValue(JSON.stringify(response.result, null, 2))
+         editor.session.selection.clearSelection();
+         editor.gotoLine(0);
+      } else {
+        console.log(res.error)
+      }
+    });
+  })(editor)
+}
+
+var editor = ace.edit("result" + 0);
+
+</script>
+
+</div>
+
+      <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="/images/logo.png" class="logo-footer"/>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>
+                        <a href="https://twitter.com/extracty_com" target="_blank"><i class="icon ion-social-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com/extracty" target="_blank"><i class="icon ion-social-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://google.com/+Extracty" target="_blank"><i class="icon ion-social-googleplus"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/MastermindLabs" target="_blank"><i class="icon ion-social-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCzqxBMgTQEBUiscD2QNp3Ig" target="_blank"><i class="icon ion-social-youtube"></i></a>
+                    </li>
+                    <li class='terms'>
+                        <a href="/terms">Terms</a>
+                    </li>
+                    <li>
+                        <a href="/impressum">Impressum</a>
+                    </li>
+                    <li class='contact us l'>
+                        <a href="mailto:info@extracty.com">Contact Us</a>
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 copy">
+                <span>© MastermindLabs UG (haftungsbeschränkt), <script>document.write(new Date().getFullYear())</script>.</span>
+            </div>
+       </div>
+    </div>
+</footer>
+
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
